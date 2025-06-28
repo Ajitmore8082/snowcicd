@@ -1,0 +1,3 @@
+# snowcicd
+
+#store snowflake object
