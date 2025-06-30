@@ -6,7 +6,7 @@ CREATE OR REPLACE FILE FORMAT DEV_DB.BRONZE_SC.CSV_FORMAT
     skip_header = 1
     empty_field_as_null = TRUE;
 
-create storage integration S3_int;
+create or replace storage integration S3_int;
     type = external_stage
     storage_provider = s3
     storage_aws_role_arn = 'arn:aws:iam::060795923566:role/SF_Role'
