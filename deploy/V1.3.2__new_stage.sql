@@ -10,6 +10,12 @@ ERROR_ON_COLUMN_COUNT_MISMATCH=FALSE;
 
 
 CREATE OR REPLACE STAGE DEV_DB.BRONZE_SC.S3_STAGE
+<<<<<<< HEAD
 FILE_FORMAT=CSV_FORMAT
 Storage_integration=S3_int
 URL='s3://snowflakes3bucket8082/csv/';
+=======
+FILE_FORMAT=DEV_DB.BRONZE_SC.CSV_FORMAT
+Storage_integration=S3_int
+URL='s3://snowflakes3bucket8082/csv/';
+>>>>>>> 141e84e19022c642c592d07c66757ac49050ff69
