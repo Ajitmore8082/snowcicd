@@ -1,12 +1,10 @@
 use DATABASE DEV_DB;
 
 CREATE OR REPLACE FILE FORMAT DEV_DB.BRONZE_SC.CSV_FORMAT
-TYPE = CSV
-FIELD_DELIMITER = ','
-SKIP_HEADER=1
-FIELD_OPTIONALLY_ENCLOSED_BY = '"'
-NULL_IF = ('NULL', 'null')
-ERROR_ON_COLUMN_COUNT_MISMATCH=FALSE;
+    type = csv
+    field_delimiter = ','
+    skip_header = 1
+    empty_field_as_null = TRUE;
 
 create storage integration S3_int;
     type = external_stage
